@@ -22,7 +22,6 @@ Can a machine learning model trained on resource utilization and hardware-level 
 * **Cross-Dataset Validation:** Applied the trained Google Borg model directly to the Alibaba dataset to evaluate cross-environment generalization and domain shift handling.
 
 #### Results
-#### Results
 * **Within-Dataset Performance:** The models evaluated on Google Borg data exhibited distinct performance profiles:
   * **Decision Tree:** Achieved near-perfect in-domain performance (**0.999 accuracy and 0.998 recall**) driven primarily by features such as ```page_cache_memory```, ```start_time```, and ```memory_accesses_per_instruction```.
   * **Logistic Regression & Linear SVC:** Both struggled with high false negatives, missing over 20,000 actual failure cases each, making them unviable for safety-critical outage detection.
